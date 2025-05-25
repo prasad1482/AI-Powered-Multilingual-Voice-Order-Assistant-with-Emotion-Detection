@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.form-group {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+select, input[type="text"], button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input[type="text"] {
+    flex: 1;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+.menu, .cart, .result, .history {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+.cart {
+    background: #e0f7fa;
+}
+.menu ul, .cart ul, .history ul {
+    list-style: none;
+    padding: 0;
+}
+.menu li, .cart li, .history li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+.history li {
+    border-bottom: 1px solid #eee;
+}
